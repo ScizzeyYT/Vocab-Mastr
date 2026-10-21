@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VOCAB MASTR | Spelling Practice</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        frost: {
+                            bg: '#060b13',
+                            card: '#0f172a',
+                            cyan: '#38bdf8',
+                            ice: '#38ef7d',
+                            accent: '#4facfe'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/><link href="styles.css" rel="stylesheet"/>
+
+<link href="data:image/png;base64,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" rel="icon" type="image/png"/>
+</head>
+<body class="flex flex-col justify-between min-h-screen p-3 sm:p-6 select-none relative z-10">
+<!-- CANVAS BACKGROUND SNOWFALL -->
+<canvas id="snow-canvas"></canvas>
+<!-- HEADER & SOCIAL LINKS -->
+<header class="max-w-4xl w-full mx-auto flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800/80 relative z-10">
+<div class="flex items-center gap-3">
+<img alt="VOCAB MASTR logo" class="w-10 h-10 rounded-xl object-cover shadow-lg shadow-sky-500/20" height="40" src="data:image/png;base64,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" width="40"/>
+<div>
+<h1 class="text-xl font-extrabold text-white tracking-wide flex items-center gap-2">
+                    VOCAB MASTR
+                </h1>
+<p class="text-xs text-slate-400 font-medium">Created by <span class="text-sky-400 font-semibold">Talha</span></p>
+</div>
+</div>
+<!-- NAVIGATION TABS -->
+<nav class="flex flex-wrap items-center bg-slate-900/90 p-1 rounded-xl border border-slate-800 text-xs font-semibold"><a class="px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 text-slate-400 hover:text-white" href="index.html" target="_self"><i class="fa-solid fa-bullseye"></i> Main Quiz</a><a class="px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 text-slate-400 hover:text-white" href="quiz-maker.html" target="_self"><i class="fa-solid fa-hammer"></i> Quiz Maker</a><a class="px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 text-slate-400 hover:text-white" href="quiz-words.html" target="_self"><i class="fa-solid fa-list-check"></i> Quiz Words</a><a aria-current="page" class="px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 text-sky-400 bg-slate-800" href="spelling.html" target="_self"><i class="fa-solid fa-spell-check"></i> Spelling Practice</a></nav>
+<!-- SOCIAL LINKS & SETTINGS -->
+<div class="flex items-center gap-2">
+<a class="flex items-center gap-1.5 bg-slate-900/90 hover:bg-red-950/40 text-slate-300 hover:text-red-400 px-2.5 py-1.5 rounded-xl border border-slate-800 hover:border-red-500/40 text-xs font-semibold transition" href="https://youtube.com/@ScizzeyYT" rel="noopener noreferrer" target="_blank" title="YouTube">
+<i class="fa-brands fa-youtube text-red-500 text-sm"></i>
+<span class="hidden md:inline">YouTube</span>
+</a>
+<a class="flex items-center gap-1.5 bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-sky-400 px-2.5 py-1.5 rounded-xl border border-slate-800 hover:border-sky-500/40 text-xs font-semibold transition" href="https://tiktok.com/@scizzey_fn" rel="noopener noreferrer" target="_blank" title="TikTok">
+<i class="fa-brands fa-tiktok text-sky-400 text-sm"></i>
+<span class="hidden md:inline">TikTok</span>
+</a>
+<a class="flex items-center gap-1.5 bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-purple-400 px-2.5 py-1.5 rounded-xl border border-slate-800 hover:border-purple-500/40 text-xs font-semibold transition" href="https://github.com/ScizzeyYT" rel="noopener noreferrer" target="_blank" title="GitHub">
+<i class="fa-brands fa-github text-purple-400 text-sm"></i>
+<span class="hidden md:inline">GitHub</span>
+</a>
+<a class="flex items-center gap-1.5 bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-sky-400 px-2.5 py-1.5 rounded-xl border border-slate-800 hover:border-green-500/40 text-xs font-semibold transition" href="https://www.geeksforgeeks.org/html/html-tutorial/" rel="noopener noreferrer" target="_blank" title="Where I learned HTML: GeeksforGeeks">
+<i class="fa-solid fa-code text-green-500 text-sm"></i>
+<span class="hidden md:inline">GeeksforGeeks</span>
+</a>
+<button aria-label="Open settings" class="flex items-center justify-center bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-sky-400 w-8 h-8 rounded-xl border border-slate-800 hover:border-sky-500/40 text-xs font-semibold transition" onclick="app.openSettings()" title="Settings" type="button">
+<i class="fa-solid fa-gear"></i>
+</button>
+</div>
+</header>
+<!-- SETTINGS MODAL -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden" id="settings-modal">
+<div class="frost-glass frost-border max-w-md w-full rounded-3xl p-6 relative">
+<div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-5">
+<h3 class="text-lg font-bold text-white flex items-center gap-2">
+<i class="fa-solid fa-sliders text-sky-400"></i> Settings &amp; Background
+                </h3>
+<button class="text-slate-400 hover:text-white text-lg transition" onclick="app.closeSettings()">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="space-y-5">
+<!-- PRESET BACKGROUNDS -->
+<div>
+<label class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-3">Background Themes</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="preset-btn p-3 rounded-xl border border-slate-800 bg-slate-900/90 hover:border-sky-500/50 text-left transition flex items-center gap-2 text-xs font-medium text-slate-200" data-preset="snow" onclick="app.setBackground('snow')">
+<i class="fa-solid fa-snowflake text-sky-400"></i> theam1
+                        </button>
+<button class="preset-btn p-3 rounded-xl border border-slate-800 bg-slate-900/90 hover:border-sky-500/50 text-left transition flex items-center gap-2 text-xs font-medium text-slate-200" data-preset="space" onclick="app.setBackground('space')">
+<i class="fa-solid fa-meteor text-purple-400"></i> theam2
+                        </button>
+<button class="preset-btn p-3 rounded-xl border border-slate-800 bg-slate-900/90 hover:border-sky-500/50 text-left transition flex items-center gap-2 text-xs font-medium text-slate-200" data-preset="cyber" onclick="app.setBackground('cyber')">
+<i class="fa-solid fa-bolt text-cyan-400"></i> theam3
+                        </button>
+<button class="preset-btn p-3 rounded-xl border border-slate-800 bg-slate-900/90 hover:border-sky-500/50 text-left transition flex items-center gap-2 text-xs font-medium text-slate-200" data-preset="carbon" onclick="app.setBackground('carbon')">
+<i class="fa-solid fa-cube text-slate-400"></i> theam4
+                        </button>
+</div>
+</div>
+<!-- CUSTOM UPLOAD -->
+<div class="pt-2 border-t border-slate-800/80">
+<label class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-2">Custom Background Image</label>
+<div class="flex flex-col gap-2">
+<label class="flex items-center justify-center gap-2 px-4 py-3 bg-slate-900/90 hover:bg-slate-800 text-sky-400 border border-slate-800 hover:border-sky-500/40 rounded-xl text-xs font-semibold cursor-pointer transition">
+<i class="fa-solid fa-cloud-arrow-up text-sm"></i> Upload Custom Picture
+                            <input accept="image/*" class="hidden" id="bg-upload-input" onchange="app.handleBgUpload(event)" type="file"/>
+</label>
+<button class="hidden px-4 py-2 bg-red-950/40 hover:bg-red-900/50 text-red-400 border border-red-800/40 rounded-xl text-xs font-semibold transition" id="clear-custom-bg" onclick="app.clearCustomBg()">
+<i class="fa-solid fa-trash text-xs mr-1"></i> Remove Custom Image
+                        </button>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800 text-right">
+<button class="px-6 py-2 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs rounded-xl transition" onclick="app.closeSettings()">
+                    Done
+                </button>
+</div>
+</div>
+</div>
+<!-- MAIN CONTENT CONTAINER -->
+<main class="flex-1 max-w-3xl w-full mx-auto flex items-center justify-center py-6 relative z-10">
+<!-- TAB 1: MAIN VOCAB QUIZ SECTION -->
+
+<!-- TAB 2: CUSTOM QUIZ MAKER SECTION -->
+
+<!-- TAB 4: UPCOMING QUIZ WORDS -->
+
+<!-- TAB 5: SPELLING PRACTICE -->
+<section class="w-full hidden" id="section-spelling">
+<div class="frost-glass frost-border w-full rounded-3xl p-6 sm:p-8">
+<div class="pb-4 border-b border-slate-800 mb-6">
+<h2 class="text-xl font-bold text-white flex items-center gap-2 mb-1"><i class="fa-solid fa-spell-check text-sky-400"></i> Spelling Practice</h2>
+<p class="text-xs text-slate-400">Read the meaning and type the vocabulary word from memory. All 11 upcoming words are included.</p>
+</div>
+<div class="max-w-xl mx-auto text-center">
+<div class="text-xs font-bold text-sky-400 mb-4" id="spelling-progress">Press Start to begin</div>
+<div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-5 sm:p-7 mb-5">
+<p class="text-xs uppercase tracking-wider text-slate-500 font-bold mb-3">Word meaning</p>
+<p class="text-base sm:text-lg text-slate-100 leading-relaxed" id="spelling-meaning">Practice spelling the 11 upcoming quiz words.</p>
+<p class="text-sm text-slate-400 italic mt-3" id="spelling-example"></p>
+</div>
+<form class="space-y-3" onsubmit="app.checkSpelling(); return false;">
+<label class="sr-only" for="spelling-input">Type the vocabulary word</label>
+<input autocapitalize="none" autocomplete="off" class="w-full bg-slate-950 border border-slate-700 focus:border-sky-500 rounded-xl p-3 text-white text-center text-lg font-mono outline-none" disabled="" id="spelling-input" placeholder="Type the word here..." spellcheck="false" type="text"/>
+<div class="flex flex-wrap justify-center gap-2">
+<button class="px-5 py-3 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm rounded-xl" id="spelling-start-btn" onclick="app.startSpelling()" type="button">Start Practice</button>
+<button class="px-5 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm rounded-xl hidden" id="spelling-check-btn" type="submit">Check Spelling</button>
+<button class="px-5 py-3 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm rounded-xl hidden" id="spelling-next-btn" onclick="app.nextSpelling()" type="button">Next Word</button>
+<button class="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-sm rounded-xl hidden" id="spelling-reveal-btn" onclick="app.revealSpelling()" type="button">Reveal Answer</button>
+</div>
+</form>
+<p aria-live="polite" class="min-h-6 mt-4 text-sm font-semibold" id="spelling-feedback"></p>
+<p class="text-xs text-slate-500 mt-2" id="spelling-score"></p>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER WITH FUNCTIONAL LINKS -->
+<footer class="max-w-4xl w-full mx-auto text-center pt-4 border-t border-slate-800/80 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-3 relative z-10">
+<span>VOCAB MASTR   I will update this every new upcoming vocab quiz</span>
+<div class="flex items-center gap-3">
+<a class="text-slate-400 hover:text-red-400 transition font-medium flex items-center gap-1" href="https://youtube.com/@ScizzeyYT" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-youtube"></i> @ScizzeyYT
+            </a>
+<span>•</span>
+<a class="text-slate-400 hover:text-sky-400 transition font-medium flex items-center gap-1" href="https://tiktok.com/@scizzey_fn" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-tiktok"></i> @scizzey_fn
+            </a>
+<span>•</span>
+<a class="text-slate-400 hover:text-purple-400 transition font-medium flex items-center gap-1" href="https://github.com/ScizzeyYT" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-github"></i> ScizzeyYT
+            </a>
+</div>
+<span>Created by <span class="text-sky-400 font-semibold">Talha</span></span>
+</footer>
+<!-- JAVASCRIPT LOGIC -->
+
+<script defer="True" src="app.js"></script></body>
+</html>
