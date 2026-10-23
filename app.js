@@ -49,26 +49,26 @@
         // 11 Core Quiz Words
         const targetQuizWords = [
             {
-                word: "deliriously",
+                word: "Occupant",
                 phonetic: "/dɪˈlɪr.i.əs.li/",
                 partOfSpeech: "adverb",
-                meaning: "Super, crazy happy or excited—like winning a big game and jumping up and down!",
-                example: ".",
+                meaning: "is a person who lives, works, or is physically present in a specific space, building, room, vehicle, or position at a given time ",
+                example: "."
                 distractors: ["gaunt", "modest", "methodically"]
             },
             {
-                word: "unoccupied",
+                word: "Bartering",
                 phonetic: "/ˌʌnˈɑː.kjə.paɪd/",
                 partOfSpeech: "adjective",
-                meaning: "Empty or not being used—like a swing at the park when nobody is sitting on it.",
+                meaning: "the direct exchange of goods or services for other goods or services without using money, cash, or credit",
                 example: ".",
                 distractors: ["plentiful", "arduous", "haste"]
             },
             {
-                word: "modest",
+                word: "Agape",
                 phonetic: "/ˈmɑː.dɪst/",
                 partOfSpeech: "adjective",
-                meaning: "Not bragging about what you're good at, or keeping things simple instead of flashy.",
+                meaning: "two distinct meanings depending on whether it is used as a theological concept or a descriptive physical term ",
                 example: ".",
                 distractors: ["eternal", "deliriously", "tutelage"]
             },
@@ -89,34 +89,34 @@
                 distractors: ["plentiful", "unoccupied", "modest"]
             },
             {
-                word: "plentiful",
+                word: "Manifesting",
                 phonetic: "/ˈplen.tɪ.fəl/",
                 partOfSpeech: "adjective",
-                meaning: "Having tons of something—like having a big bucket overflowing with candy.",
+                meaning: "mindset and goal setting",
                 example: ".",
                 distractors: ["gaunt", "arduous", "tutelage"]
             },
             {
-                word: "forage",
+                word: "Intently",
                 phonetic: "/ˈfɔːr.ɪdʒ/",
                 partOfSpeech: "verb",
-                meaning: "To hunt around and search for food or supplies—like a squirrel searching for nuts in the woods.",
+                meaning: "to do something with complete, focused, or strained attention and concentration",
                 example: ".",
                 distractors: ["eternal", "methodically", "haste"]
             },
             {
-                word: "tutelage",
+                word: "Mercifully",
                 phonetic: "/ˈtuː.t̬əl.ɪdʒ/",
                 partOfSpeech: "noun",
-                meaning: "Learning under the guidance or protection of a teacher or coach who helps you get better.",
+                meaning: "Doing something with kindness, pity, forgiveness, or a lack of harshness ",
                 example: ".",
                 distractors: ["forage", "modest", "unoccupied"]
             },
             {
-                word: "gaunt",
+                word: "Persistent",
                 phonetic: "/ɡɑːnt/",
                 partOfSpeech: "adjective",
-                meaning: "Looking super skinny and tired, usually because someone was sick or didn't get enough food.",
+                meaning: "continuing firmly for a long time, refusing to give up, or repeating without stopping",
                 example: ".",
                 distractors: ["plentiful", "deliriously", "eternal"]
             },
@@ -129,13 +129,18 @@
                 distractors: ["haste", "arduous", "methodically"]
             },
             {
-                word: "haste",
+                word: "Hoist",
                 phonetic: "/heɪst/",
                 partOfSpeech: "noun",
-                meaning: "Moving or doing something super fast, usually in a rush—like trying to catch the school bus.",
+                meaning: "to raise, lift, or haul something heavy ",
                 example: ".",
                 distractors: ["tutelage", "modest", "unoccupied"]
-            }
+            },
+            {
+                word:  "Vicious",
+                phonetic: "/heist/",
+                partofspeech: "noun",
+                meaning: "intentionally cruel, violent, aggressive, or full of malice",        
         ];
 
         // Embedded General Dictionary Dataset
